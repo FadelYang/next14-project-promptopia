@@ -11,14 +11,16 @@ const layout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div className="main">
-          <div />
-        </div>
+        <Provider>
+          <div className="main">
+            <div />
+          </div>
 
-        <main className="app">
-          <Nav />
-          {children}
-        </main>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
