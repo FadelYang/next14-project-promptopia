@@ -6,7 +6,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Form from "@components/Form";
 
-const page = () => {
+const CreatePrompt = () => {
   const router = useRouter();
   const { data: session } = useSession();
 
@@ -51,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CreatePrompt;
